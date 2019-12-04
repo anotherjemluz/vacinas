@@ -1,6 +1,6 @@
 <template lang="pug">
   div#surveyContainer
-    survey-window()
+    //- survey-window()
 
 </template>
 
