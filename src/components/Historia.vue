@@ -1,6 +1,5 @@
 <template lang="pug">
   div#historia
-    <hzqing-vue-timeline timelineColor="#fff" timeContentColor="#f5f5f5" :dataList="data"></hzqing-vue-timeline>
 </template>
 
 <script>
@@ -8,23 +7,6 @@ export default {
   name: 'Historia',
   data: () => {
     return {
-      data: [
-        {
-            img: 'static/touxiang.jpeg',
-            title: 'Evento 1',
-            content: 'asdada'
-        },
-        {
-            img: 'static/one.jpeg',
-            title: 'Evento 2',
-            content: 'asda'
-        },
-        {
-            img: 'Evento 3',
-            title: 'sadd',
-            content: 'asdadsd'
-        }
-    ]
     }
   },
   methods: {

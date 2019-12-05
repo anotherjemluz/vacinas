@@ -7,13 +7,13 @@ import store from './store'
 import AOS from 'aos'
 import BootstrapVue from 'bootstrap-vue'
 
-import hzqingVueTimeline from 'hzqing-vue-timeline'
+// import hzqingVueTimeline from 'hzqing-vue-timeline'
 
 Vue.config.productionTip = false
 
 AOS.init();
 Vue.use(BootstrapVue)
-Vue.use(hzqingVueTimeline)
+// Vue.use(hzqingVueTimeline)
   
 new Vue({
   // router,
