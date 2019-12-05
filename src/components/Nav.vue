@@ -149,7 +149,6 @@ export default {
   padding: 30px 30px 10px 30px;
 
   a {
-    margin: 5px 20px;
     color: #b983f6;
     font-size: 30px;
 
@@ -157,11 +156,33 @@ export default {
       color: #8a35eb;
     }
   }
+
+  // MOBILE
+  @media only screen and (max-width: 900px) {
+    a { 
+      font-size: 20px; 
+      margin: 5px 10px;
+    }
+  }
+
+  // DESKTOP
+  @media only screen and (min-width: 901px) {
+    a { 
+      font-size: 30px; 
+      margin: 5px 20px;
+    }
+  }
 }
 
-.progress_svg #complete {
-  transform: rotate(180deg);
-  animation: width 2s easy;
-  // width: 19%;
+.progress_svg { 
+  #complete {
+    transform: rotate(180deg);
+    animation: width 2s easy;
+  }
+
+  // MOBILE
+  @media only screen and (max-width: 900px) {
+    width: 90vw;
+  }
 }
 </style>

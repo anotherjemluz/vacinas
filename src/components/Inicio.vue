@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div#inicio
     p {{ msg }}
 </template>
 
@@ -12,5 +12,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+#inicio {
+}
 </style>

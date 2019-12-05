@@ -18,14 +18,14 @@
         img.dr_input_img(src='./assets/dr.svg')
 
       div.pEstado(v-show='showEstado')
-        input(
-          type='text'
-          placeholder='Qual seu estado?'
-        )
+        select(id="estado" name="estado")
+          option(value="selecione") Selecione seu Estado
+          option(v-for='estado in estados' value='esttado.sigla') {{ estado.nome }}
+
         h1(@click='pEstado') Próximo
         img.dr_input_img(src='./assets/dr.svg')
 
-
+    <!-- -->
       Home(v-show='showContent')
 
     <!-- Footer  -->
@@ -39,6 +39,7 @@
 <script>
   import Nav from '@/components/Nav.vue'
   import Home from '@/views/Home.vue'
+  import array from '../estados.json'
 
   export default {
     components: { Home, Nav },
@@ -53,7 +54,11 @@
         pHistoria: 77,
         pMitos: 57,
         pVacinacao: 41,
-        pCarteira: 19
+        pCarteira: 19,
+        estados: array,
+        object: {
+          name: 'Object Name',
+        }
       }
     },
     methods: {
@@ -73,22 +78,16 @@
         this.scrolled = window.scrollY > 0;
 
         if(window.scrollY > 0) {
-          // let complete = 565
-        
-          // relaciona a altura e o scroll e obtem a porcentagem do scroll em relação a altura
-          // let scrollPercent =  (window.scrollY / document.documentElement.scrollHeight) * 100
+          // relaciona a rolagem com a porcentagem da altura
           let scrollPercent = window.scrollY / (document.documentElement.scrollHeight / 100)
   
-          // 1% do progresso
+          // define a porcentagem inversa complementar para ser usada no indicador de progresso da seringa
           let progressPercent = `${100 - (scrollPercent + 10)}%`
   
           // define o width do progresso
           let progress = document.getElementById("complete")
-          progress.setAttribute("width", progressPercent)
-  
-          console.log("scroll " + window.scrollY)
+          progress.setAttribute("width", progressPercent)  
         }
-
       },
     },
     created () {
@@ -110,7 +109,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 5000px;
+  // height: 5000px;
 
   a { 
     text-decoration: none; 
@@ -130,7 +129,7 @@
     height: 50vh;
   }
 
-  h1, input {
+  h1, input, select, option {
     position: absolute;
     display: inline;
   }
@@ -148,22 +147,35 @@
     }
   }
 
-  input {
-    font-size: 30px;
-    border-radius: 20px;
+  input, select {
+    
     padding: 10px 20px;
+    border-radius: 20px;
     border-style: none;
     outline: none;
+  }
+
+  select {
+    color: #01403A;
+  }
+
+  option {
+    font-size: 18px;
+
   }
 
   // MOBILE
   @media only screen and (max-width: 900px) {
     h1 { margin: 80px 0 0 0; }
+    input { width: 70vw; font-size: 25px; }
+    select { width: 80vw; font-size: 25px; }
   }
   
   // DESKTOP
   @media only screen and (min-width: 901px) {
     h1 { margin: 100px 0 0 -10px; }
+    input, select { font-size: 30px; }
+
   }
 }
 </style>

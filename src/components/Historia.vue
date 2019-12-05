@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div#historia
     <hzqing-vue-timeline timelineColor="#fff" timeContentColor="#f5f5f5" :dataList="data"></hzqing-vue-timeline>
 </template>
 
@@ -42,5 +42,9 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+#historia {
+  top: 200px;
+}
+
 div #hzqing .timeline-row .timeline-time { color: gray; }
 </style>

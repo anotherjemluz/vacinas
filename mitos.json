@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "manchete": "Vacinas causam mais doenças do que previnem?",
+    "resposta": "Todas as vacinas são testadas de forma rigorosa e só são liberadas quando se tem certeza de sua eficácia e segurança."
+  },
+  {
+    "id": 2,
+    "manchete": "Se a vacina já está erradicada em nosso país, ela nunca mais vai aparecer, então não preciso mais me vacinar?",
+    "resposta": "Com a vacinação, alguns agentes infecciosos se tornaram raros, não significando que estão extintos. Há um fluxo intenso de pessoas viajando entre países o que pode acarretar em contaminação, caso não esteja imune, fazendo ressurgir a doença"
+  },
+  {
+    "id": 3,
+    "manchete": "Vacinas são um instrumento de controle da indústria farmacêutica?",
+    "resposta": "Além de muitas vacinas serem disponibilizadas gratuitamente pelos postos de saúde, muitas doenças foram comprovadamente controladas graças à vacinação."
+  },
+  {
+    "id": 4,
+    "manchete": "Não quero vacinar meu filho e isso é uma decisão minha, certo?",
+    "resposta": "Errado! A vacina é um direito assegurado pelo Estatuto da Criança e do Adolescente. Pais podem responder criminalmente pela recusa e, em casos extremos, até perder o poder familiar. "
+  },
+  {
+    "id": 5,
+    "manchete": "Se a doença não é grave eu não preciso me vacinar?",
+    "resposta": "Doenças infecciosas são potencialmente graves com registro de hospitalizações, sequelas ou óbitos. A vacinação é de extrema importância para evitar graves consequências."
+  },
+  {
+    "id": 6,
+    "manchete": "Se existem outras formas de prevenção da doença, eu não preciso me vacinar?",
+    "resposta": "Básicos hábitos de higiene e uma vida saudável são de muito importantes para evitar a propagação de doenças, mas não substituem a vacinação."
+  },
+  {
+    "id": 7,
+    "manchete": "A vacina da gripe não evita ninguém de ficar gripado, então ela não é eficiente?",
+    "resposta": "Cada organismo reage de forma diferente a uma doença, podendo ter consequências mais graves, por isso, mesmo a gripe, que parece ser inofensiva, deve ser prevenida por vacinação. Além disso, o virus da gripe é um dos mais mutáveis, isso interfere na forma como nosso corpo o reconhece e se defende, como se o virus adotasse um disfarce de tempos em tempos. É por isso inclusive que as vacinas da gripe devem ser renovadas com mais frequência que as demais."
+  },
+  {
+    "id": 8,
+    "manchete": "Vacina causa autismo?",
+    "resposta": "Não. Em 1998, um trabalho científico foi apresentado relacionando o autismo com a vacina tríplice viral. Posteriormente, o próprio autor do artigo provou que havia cometido erros metodológicos na revista em que o estudo tinha sido publicado. Mas, ainda hoje, esse erro é propagado."
+  },
+  {
+    "id": 9,
+    "manchete": "Vacina tem mercúrio, isso está nos matando aos poucos?",
+    "resposta": "Para evitar proliferação de fungos e bactérias nos frascos, algumas vacinas possuem timerosal (composto com mercúrio) que é usado como conservante. Essa substância é usada em quantidade muito pequena, sendo comprovadamente não tóxica e é expelida pelo próprio corpo. "
+  },
+  {
+    "id": 10,
+    "manchete": "Vacinas provocam efeitos colaterais que são mais perigosos que a própria doença?",
+    "resposta": "As vacinas, assim como os medicamentos, podem conter algumas reações adversas, mas são comumente pouco preocupantes e somem rápido. Efeitos colaterais mais graves ocasionados por vacinas são muito raros, entretanto, complicações em decorrência de certas doenças são bastante comuns."
+  }
+]
