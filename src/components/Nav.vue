@@ -8,9 +8,9 @@
       a(href="#carteira") Carteira
 
     <svg class='progress_svg' width="599" height="17" viewBox="0 0 599 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect id='complete' x="-567" y='-17' width="565" height="17" rx="8.5" fill="#60B9B0"/>
+      <rect id='fundo' y="-17" x="-567" width="565" height="17" rx="8.5" fill="white"/>
+      <rect id='complete' y="-17" x="-567" width="565" height="17" rx="8.5" fill="#60B9B0"/>
       <rect x="1.5" y="1.5" width="566" height="14" rx="7" stroke="black" stroke-width="3"/>
-
       <path d="M539 7L539 14" stroke="black"/>
       <path d="M545 11.4546V14" stroke="black"/>
       <path d="M550 11.4546V14" stroke="black"/>
@@ -111,14 +111,13 @@
       <path d="M37 11.4546V14" stroke="black"/>
       <path d="M42 11.4546V14" stroke="black"/>
       <path d="M48 11.4546V14" stroke="black"/>
-
-      <mask id="path-103-inside-1" fill="white">
-        <rect x="566" y="4" width="9" height="9" rx="2"/>
+      <mask id="path-104-inside-1" fill="white">
+      <rect x="566" y="4" width="9" height="9" rx="2"/>
       </mask>
-
-      <rect x="566" y="4" width="9" height="9" rx="2" fill="#D6E239" stroke="black" stroke-width="6" mask="url(#path-103-inside-1)"/>
+      <rect x="566" y="4" width="9" height="9" rx="2" fill="#D6E239" stroke="black" stroke-width="6" mask="url(#path-104-inside-1)"/>
       <rect x="573" y="7" width="26" height="3" rx="1.5" fill="black"/>
     </svg>
+
 
   
 
@@ -140,42 +139,54 @@ export default {
 <style lang='scss'>
 .navigation {
   position: sticky;
-  top: 0;
+  display: inline-block;
   z-index: 99;
-  background-color: white;
-}
 
-.nav {
-  padding: 30px 30px 10px 30px;
-
-  a {
-    color: #b983f6;
-    font-size: 30px;
-
-    &:hover {
-      color: #8a35eb;
-    }
+  .nav {
+    padding: 0px 30px 10px 30px;
   }
 
-  // MOBILE
+    // MOBILE
   @media only screen and (max-width: 900px) {
-    a { 
-      font-size: 20px; 
-      margin: 5px 10px;
+    top: 0px;
+    padding: 80px 0px 20px 0px;
+    background-color: #04CCB8;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 4px 50px 5px #00000010;
+
+    .nav {
+      
+      a { 
+        font-size: 20px; 
+        margin: 5px 10px;
+      }
     }
   }
 
   // DESKTOP
   @media only screen and (min-width: 901px) {
-    a { 
-      font-size: 30px; 
+    width: inherit;
+    margin: auto;
+    top: 20px;
+    padding: 20px  40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 5px #00000010;
+
+    .nav a { 
+      font-size: 25px; 
       margin: 5px 20px;
+      &:hover {
+        color: #8a35eb;
+      }
     }
   }
+  
 }
 
+
 .progress_svg { 
-  #complete {
+  #complete, #fundo {
     transform: rotate(180deg);
     animation: width 2s easy;
   }

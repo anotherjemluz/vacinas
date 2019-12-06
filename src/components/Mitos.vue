@@ -1,10 +1,11 @@
 <template lang="pug">
   div#mitos
-    h1 Mitos sobre vacinas
+    h1 Mitos sobre #[br] vacinas
 
     div.janela(v-for='(mito,index) in mitos' :id='mito.id' @click='fecharJanela(index)')
       div.barra_pesquisa
-        h4 {{ mito.manchete.slice(0,20)+'...' }}
+        h4.mobile-slice(v-if='mobile') {{ mito.manchete.slice(0,20)+'...' }}
+        h4.desktop-slice(v-if='!mobile') {{ mito.manchete.slice(0,40)+'...' }}
         div.dots
           div.dot.green
           div.dot.yellow
@@ -23,7 +24,8 @@ export default {
   name: 'Mitos',
   data: () => {
     return {  
-      mitos: array
+      mitos: array,
+      mobile: false
     }
   },
   methods: {
@@ -38,19 +40,21 @@ export default {
     console.log(w)
 
     if( w < 901 ) {
+      this.mobile = true
       for(let i = 0; i < this.mitos.length; i++) {
         let id = i
         id++
         
-        let margin = `${40 + 10 * id}px auto 0px auto`
+        let margin = `${200 + 40 + 10 * id}px auto 0px auto`
         document.getElementById(id).style.margin = margin;
       }
-    } else {
+    } else {      
+      this.mobile = false
       for(let i = 0; i < this.mitos.length; i++) {
         let id = i
         id++
 
-        let margin = `${80 + 10 * id}px 0px 0px  ${80 + 20 * id}px `
+        let margin = `${300 + 10 * id}px 0px 0px  ${200 + 20 * id}px `
         document.getElementById(id).style.margin = margin;
       }
     }
@@ -61,15 +65,16 @@ export default {
 
 <style lang='scss'>
 #mitos {
-  font-family: 'Roboto', sans-serif;
   display: flex;
-  
 
   .janela {
+    font-family: 'Roboto', sans-serif;
     background-color: #FFF;
     box-shadow: 0px 4px 50px 5px #00000010; 
     border-radius: 10px;
     position: absolute;
+    border: 1px solid black;
+
 
     margin: 10px;
     .barra_pesquisa {
@@ -98,7 +103,17 @@ export default {
   
   // MOBILE
   @media only screen and (max-width: 900px) {
+    background-image: url('../assets/fundo-mitos-mobile.png');
     justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+    h1 { 
+      font-size: 50px; 
+      margin: 10vh 0 0 0vw;
+    }
 
     .janela { 
       width: 90vw;
@@ -111,11 +126,36 @@ export default {
 
   // DESKTOP
   @media only screen and (min-width: 901px) {
+    background-image: url('../assets/fundo-mitos-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1500px;
+
+    h1 { 
+      font-size: 90px; 
+      margin: 40vh 0 0 55vw;
+    }
+
     .janela { 
-      max-width: 550px;
+      max-width: 600px;
 
       .barra_pesquisa {
-        min-width: 550px;
+        min-width: 600px;
+      }
+
+      .conteudo {
+        h3 {
+          font-size: 30px;
+          padding: 40px 40px;  
+
+        }
+
+        p {
+          font-size: 18px;
+          margin-bottom: 60px;
+          padding: 0 50px;  
+        }
       }
     }
   }
@@ -137,6 +177,7 @@ export default {
   .yellow { background-color: #E2BD39; }
   .red { 
     background-color: #D5646F; 
+    border: 1px solid black;
     cursor: pointer;
   }
 
