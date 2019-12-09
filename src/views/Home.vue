@@ -1,6 +1,6 @@
 <template lang="pug">
   div.home
-    Inicio(msg="oi")
+    Inicio()
     Historia()
     Mitos()
     Vacinacao()

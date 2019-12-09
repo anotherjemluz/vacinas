@@ -1,10 +1,10 @@
 <template lang="pug">
   div.navigation
     div.nav
-      a(href="#inicio") Início 
+      //- a(href="#inicio") Início 
       a(href="#historia") Hístoria 
       a(href="#mitos") Mitos
-      a(href="#vacinacao") Vacinação
+      //- a(href="#vacinacao") Vacinação
       a(href="#carteira") Carteira
 
     <svg class='progress_svg' width="599" height="17" viewBox="0 0 599 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +175,7 @@ export default {
 
     .nav a { 
       font-size: 25px; 
-      margin: 5px 20px;
+      margin: 5px 60px;
       &:hover {
         color: #8a35eb;
       }

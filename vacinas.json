@@ -1,0 +1,167 @@
+[
+	{
+		"doses": "Dose única",
+		"protecaoContra": "Tuberculose",
+		"classificacao": "Criança",
+		"nome": "BCG",
+		"descricao": "Deverá ser aplicada o mais precocemente possível, de preferência ainda na maternidade.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": "Em casos de histórico familiar, suspeita de imunodeficiência ou recém-nascidos cujas mães fizeram uso de biológicos durante a gestação, a vacinação poderá ser postergada ou contraindicada."
+	},
+	{
+		"doses": "10 doses: ao nascer, 3 na adolescência, 3 na vida adulta e 3 na vida idosa",
+		"protecaoContra": "Hepatite B",
+		"classificacao": "Criança",
+		"nome": "Hepatite B",
+		"descricao": "Primeira dose ao nascer, segunda dose aos 2 meses, terceira dose aos 6 meses.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "3 doses",
+		"protecaoContra": "Meningite, Tétano, Difteria, Coqueluche e Hepatite B",
+		"classificacao": "Criança",
+		"nome": "Pentavalente",
+		"descricao": "Primeira dose aos 2 meses, segunda dose aos 4 meses, terceira dose aos 6 meses. Reforço entre 15 e 18 meses. Segundo reforço entre 4 e 5 anos.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "2 doses: 15 meses e 4 anos",
+		"protecaoContra": "Difteria, Tétano e Coqueluche",
+		"classificacao": "Criança",
+		"nome": "Tríplice bacteriana",
+		"descricao": "Primeira dose aos 2 meses, segunda dose aos 4 meses, terceira dose aos 6 meses. Reforço entre 15 e 18 meses. Segundo reforço entre 4 e 5 anos.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "2 doses: 2 e 4 meses",
+		"protecaoContra": "Rotavírus Humano",
+		"classificacao": "Criança",
+		"nome": "Rotavírus",
+		"descricao": "Duas ou três doses, dependendo da vacina utilizada (monovalente ou pentavalente) entre 2 e 8 meses.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": "Contraindicada para pessoas com mais de 4 anos de idade"
+	},
+	{
+		"doses": "3 doses: 2, 4 e 6 meses",
+		"protecaoContra": "Poliomielite",
+		"classificacao": "Criança",
+		"nome": "Poliomielite injetável (VIP)",
+		"descricao": "Primeira dose aos 2 meses, segunda dose aos 4 meses, terceira dose aos 6 meses. Reforço entre 15 e 18 meses e entre 4 e 5 anos.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "2 doses: 15 meses e 4 anos",
+		"protecaoContra": "Poliomielite",
+		"classificacao": "Criança",
+		"nome": "Poliomielite Oral",
+		"descricao": "Dose única aos 12 meses.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "3 doses: 2, 4 e 12 meses",
+		"protecaoContra": "Pneumonia",
+		"classificacao": "Criança",
+		"nome": "Pneumocócica 10V",
+		"descricao": "Duas ou três doses, dependendo da vacina utilizada (VPC10 OU VPC13) entre 2 e 6 meses de vida. Reforço entre 12 e 15 meses.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "3 doses: 3, 5 e 12 meses, e vida adolescente",
+		"protecaoContra": "Meningite",
+		"classificacao": "Criança",
+		"nome": "Meningocócicas conjugadas",
+		"descricao": "Primeira dose aos 3 meses, segunda dose aos 5 meses. Reforço entre 15 e 16 meses. Segundo reforço entre 5 e 6 anos.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "2 doses: aos 5 anos de idade e na vida idosa",
+		"protecaoContra": "Determinadas pneumonias e meningites",
+		"classificacao": "Criança",
+		"nome": "Pneumocócica 23V",
+		"descricao": "Primeira dose aos 3 meses, segunda dose aos 5 meses. Reforço entre 15 e 16 meses.",
+		"oferta": "Não disponível na rede pública, apenas rede privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "Uma ou duas doses anuais",
+		"protecaoContra": "Gripe",
+		"classificacao": "Criança",
+		"nome": "Influenza",
+		"descricao": "Dose anual. Duas doses na vacinação antes dos 9 anos de idade; Uma dose anual para a população idosa. Disponível na rede pública.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "Dose única",
+		"protecaoContra": "Febre Amarela",
+		"classificacao": "Criança",
+		"nome": "Febre amarela",
+		"descricao": "Dose única aos 12 meses.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": "A vacina contra a Febre Amarela dvee ser aplicada apenas nos Estados onde existe endemia da doença. Pessoas que viajem para estas regiões são obrigatoriamente vacinadas."
+	},
+	{
+		"doses": "Dose única aos 15 meses",
+		"protecaoContra": "Hepatite A",
+		"classificacao": "Criança",
+		"nome": "Hepatite A",
+		"descricao": "As vacinas pneumocócicas 10V, Meningocócica C, hepatite A e tetraviral são aplicadas caso não haja aplicação anterior.",
+		"oferta": "Rede pública e privada",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "12 meses",
+		"protecaoContra": "Sarampo, Caxumba e Rubéola",
+		"classificacao": "Adolescente",
+		"nome": "Tríplice Viral",
+		"descricao": "Pessoas com a vacinação antiviral completa não precisam de reforço durante a adolescência.",
+		"contraIndicacao": "Pessoas com sarampo e quadros de imunodepressão não podem tomar esta vacina."
+	},
+	{
+		"doses": "15 meses",
+		"protecaoContra": "Sarampo, caxumba, rubéola e catapora",
+		"classificacao": "Criança",
+		"nome": "Tetra Viral",
+		"descricao": "Inclui a proteção contra a catapora.",
+		"contraIndicacao": "Pessoas com sarampo e quadros de imunodepressão não podem tomar esta vacina."
+	},
+	{
+		"doses": "4 anos",
+		"protecaoContra": "Catapora",
+		"classificacao": "Criança",
+		"nome": "Varicela",
+		"descricao": "Vacina contra a catapora.",
+		"contraIndicacao": "Pessoas com sarampo e quadros de imunodepressão não podem tomar esta vacina."
+	},
+	{
+		"doses": "2 doses para meninas entre 9 a 14 anos, e 2 doses para meninos entre 11 e 14 anos",
+		"protecaoContra": "Papiloma Vírus Humano (HPV)",
+		"classificacao": "Adolescente",
+		"nome": "HPV",
+		"descricao": "Três doses para soropositivos entre 9 e 10 anos. Situações fora das previstas esyão disponíveis apenas na rede privada.",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "A cada 10 anos, começando a partir dos 7 anos de idade",
+		"protecaoContra": "Tétano e Difteria",
+		"classificacao": "Adulto",
+		"nome": "Dupla Adulto",
+		"descricao": "Reforço para proteção contra tétano e difteria.",
+		"contraIndicacao": null
+	},
+	{
+		"doses": "Dose única para gestantes",
+		"protecaoContra": "Difteria, Tétano, Coqueluche e Meningite",
+		"classificacao": "Gestantes",
+		"nome": "dTpa",
+		"descricao": "Recomendada pela OMS em vários países. No Brasil, apenas as gestantes tem obrigatoriedade durante o pré-natal.",
+		"contraIndicacao": null
+	}
+]

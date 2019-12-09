@@ -13,6 +13,8 @@
         input(
           type='text'
           placeholder='Qual a sua idade?'
+          v-model='userIdade'
+          required
         )
         h1(@click='pIdade') Próximo
         img.dr_input_img(src='./assets/dr.svg')
@@ -30,7 +32,7 @@
 
     <!-- Footer  -->
     footer(v-show='showContent')
-      a(to="/sobre") Sobre
+      //- a(to="/sobre") Sobre
 
 
 
@@ -45,6 +47,8 @@
     components: { Home, Nav },
     data: () => {
       return {
+        userIdade: null,
+        userEstado: null,
         showStart: true,
         showIdade: false,
         showEstado: false,
@@ -67,8 +71,30 @@
         this.showIdade = !this.showIdade
       },
       pIdade() {
-        this.showIdade = !this.showIdade
-        this.showEstado = !this.showEstado
+        if(this.userIdade) {
+          this.$store.commit('setUserIdade', this.userIdade)
+          
+          // faixa etario: 
+          // 1 = criança (0 a 10 anos)
+          // 2 = adolescente (10 a 20 anos)
+          // 3 = adulto (20 a 60 anos)
+          // 4 = idoso (+60 anos)
+          
+          // if(this.userIdade < 10 ) {
+          //   this.$store.commit('setFaixaEtaria', 1)
+          // } else if(this.userIdade === 10 && this.userIdade < 20 ) {
+          //   this.$store.commit('setFaixaEtaria', 2)
+          // } else if(this.userIdade === 20 && this.userIdade < 60 ) {
+          //   this.$store.commit('setFaixaEtaria', 3)
+          // } else if(this.userIdade > 59  ) {
+          //   this.$store.commit('setFaixaEtaria', 4)
+          // }
+
+          this.showIdade = !this.showIdade
+          this.showContent = !this.showContent
+          // this.showEstado = !this.showEstado
+        
+        }
       },
       pEstado() {
         this.showEstado = !this.showEstado
