@@ -14,7 +14,7 @@
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.3.2",
     "hzqing-vue-timeline": "^1.0.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.10",
     "vue-dropdowns": "^1.1.1",
